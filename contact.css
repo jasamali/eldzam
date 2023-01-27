@@ -1,0 +1,409 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'monsterrat', sans-serif;
+
+}
+
+body {
+    background-color: #fefefe;
+}
+
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
+
+.nav-content {
+    margin: 0 auto;
+    padding: 0 8.2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #c90000;
+}
+
+.nav-content img {
+    width: 2rem;
+    margin-right: .3rem;
+}
+
+.nav-content h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 44px;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #ffffff;
+}
+
+.nav-logo-content img, .nav-logo-content h2 {
+    display: none; 
+}
+
+.nav-links .nav-logo-content-list {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* .nav-links a {
+    border-bottom: solid 2px white;
+} vidi da li zelis ovo */
+
+.nav-content a {
+    display: block;
+    font-size: 1rem;
+    line-height: 44px;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #ffffff;
+}
+.nav-content a:hover,
+.nav-icon:hover,
+.search-icon:hover {
+    opacity: 0.7;
+}
+.nav-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-links .responsive-prvi-link-navbar {
+    display: none;
+}
+
+.nav-icon {
+    display: none;
+    grid-gap: 5px;
+    grid-template-columns: auto;
+    padding: 17px 0;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.bar {
+    height: 1px;
+    width: 18px;
+    background: white;
+    transition: 0.5s;
+}
+.show .one {
+    transform: rotate(45deg) translateY(4px);
+}
+.show .two {
+    transform: rotate(-45deg) translateY(-4px);
+}
+
+.show .three {
+    transform: translateX(500px);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* kontakt forma */
+
+.kontakt-forma {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    justify-content: center;
+}
+
+.naslov {
+    font-size: 3rem;
+    margin: 0 auto 3rem auto;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+/* form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+} */
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.field{
+    text-align: center;
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+    border-radius: .5rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+ .kontakt-forma .btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #c90000;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+    border-radius: .5rem;
+}
+
+.btn:hover{
+    background-color: #900000;
+}
+
+.field:focus{
+    border: 2px solid #900000;
+    background-color: #fff;
+}
+
+
+/* kraj kontakt forme za mobile i desktop */
+
+
+.kontakt-info {
+    margin: 1rem;
+    height: 80vh;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.kontakt-info p {
+    font-size: 1.3rem;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #c90000;
+    color: white;
+    height: 81vh;
+}
+
+.gornji-dio-footera {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.eldzam-desc-footer, .footer-nav, .footer-kontakt {
+    width: 19rem;
+}
+
+.footer-nav ul li a {
+    font-size: 1.5rem;
+    line-height: 5rem;
+    text-decoration: underline;
+    color: white;
+}
+.footer-nav ul li {
+    list-style: none;
+}
+
+.footer-naslov {
+    font-size: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+
+}
+
+.footer-p {
+    text-align: center;
+    
+}
+
+.footer-kontakt-info {
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.donji-dio-footera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons {
+    margin: 3rem auto;
+}
+
+i {
+    margin: .3rem ;
+}
+
+.icons a {
+    color: white;
+}
+
+.trademark-moj {
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+}
+
+.trademark-moj a {
+    color: white;
+    text-decoration: underline;
+
+}
+
+
+@media only screen and (max-width: 1000px){
+    footer{
+        padding: 3rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 880px){
+
+    .kontakt-forma{
+		grid-template-columns: 1fr;
+        margin: 0 2rem;
+	}
+    .kontakt-forma h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .kontakt-info h1 {
+        font-size: 2rem;
+    }
+
+    footer {
+        height: unset;
+    }
+
+    .gornji-dio-footera {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .footer-nav, .eldzam-desc-footer, .footer-kontakt {
+        margin-bottom: 3rem;
+    }
+
+
+
+
+}
+
+
+/* kraj footera za contact page */
+
+
+@media only screen and (max-width: 780px) {
+    header {
+        z-index: 9999;
+        
+    }
+
+    .nav-content .nav-logo-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+
+    .nav-logo-content img, .nav-logo-content h2 {
+        display: inline-block; 
+    }
+
+    .nav-logo-content-list img, .nav-logo-content-list h2 {
+        display: none;
+    }
+
+    .nav-content {
+        padding: 0 1rem;
+
+    }
+    .show {
+        background-color: #c90000;
+    }
+    .nav-links {
+        position: fixed;
+        top: 44px;
+        right: 0;
+        height: 0;
+        width: 100%;
+        background: #c90000;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: height 2s cubic-bezier(0.19, 1, 0.22, 1);
+        background-color: 0.3s;
+    }
+
+    /* .nav-links .responsive-prvi-link-navbar {
+        display: block;
+    }                                                                   ovo je link za home na responsive navbaru. pitaj dzidu da li zeli da ga ima ili nema jer vec postoji logo*/
+
+    .show .nav-links {
+        height: 100%;
+        background-color: #c90000;
+    }
+    .nav-links a {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        margin: 1rem 3.125rem;
+        transition: opacity 1.5s, height 2s;
+    }
+    .show .nav-links a {
+        opacity: 1;
+        width: auto;
+        height: auto;
+    }
+    .nav-icon {
+        order: 1;
+        display: grid;
+        height: unset;
+    }
+    /* navbar responsive */
+}

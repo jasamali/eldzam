@@ -1,0 +1,755 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'monsterrat', sans-serif;
+
+}
+
+body {
+    background-color: #fefefe;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+
+
+.nav-content {
+    margin: 0 auto;
+    padding: 0 8.2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #c90000;
+}
+
+.nav-content img {
+    width: 2rem;
+    margin-right: .3rem;
+}
+
+.nav-content h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 44px;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #ffffff;
+}
+
+.nav-logo-content img, .nav-logo-content h2 {
+    display: none; 
+}
+
+.nav-links .nav-logo-content-list {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* .nav-links a {
+    border-bottom: solid 2px white;
+} vidi da li zelis ovo */
+
+.nav-content a {
+    display: block;
+    font-size: 1rem;
+    line-height: 44px;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #ffffff;
+}
+.nav-content a:hover,
+.nav-icon:hover,
+.search-icon:hover {
+    opacity: 0.7;
+}
+.nav-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-links .responsive-prvi-link-navbar {
+    display: none;
+}
+
+.nav-icon {
+    display: none;
+    grid-gap: 5px;
+    grid-template-columns: auto;
+    padding: 17px 0;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.bar {
+    height: 1px;
+    width: 18px;
+    background: white;
+    transition: 0.5s;
+}
+.show .one {
+    transform: rotate(45deg) translateY(4px);
+}
+.show .two {
+    transform: rotate(-45deg) translateY(-4px);
+}
+
+.show .three {
+    transform: translateX(500px);
+}
+
+
+
+
+/* gotov navbar desktop */
+
+.hero {
+    background-image: url(slike/eldzam-prostorija\ 1.png);
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'raleway';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero-logo {
+    width: 12.5rem;
+    margin-bottom: .5rem;
+}
+.naslov-glavni {
+    font-size: 1.5rem;
+    color: #c90000;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2rem;
+
+}
+
+.hyperlink a {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline ;
+}
+
+.hyperlink a:hover {
+    text-decoration: underline 2px;
+}
+
+
+/* kraj hero pagea desktop */
+
+.usluge-container {
+    display: flex;
+    background-color: #f9f9f9;
+    margin: .5rem 0;    
+    position: relative;
+}
+.prvi {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 3rem;
+    padding-left: 1rem;
+}
+
+.prvi h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    width: 500px;
+    font-family: 'Raleway', sans-serif;
+    line-height: normal;
+    color: #c90000;
+
+}
+
+.prvi p{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 500px;
+    color: #900000;
+}
+
+.prvi ul {
+    width: 500px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-family: 'Inter Tight', sans-serif;
+    color: #c90000;
+}
+
+.prvi ul li {
+    margin-bottom: 1rem;
+    list-style: circle;
+}
+
+
+.drugi {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1rem;
+}
+.kvadar {
+    height: 300px;
+    width: 150px;
+    background-color: #900000;
+    border-radius: 15px;
+    position: relative;
+    right: 160px;
+    top: 40px;
+}
+
+.slika {
+    height: 1000px;
+    width: 400px;
+    z-index: 1;
+    margin-bottom: 1rem;
+}
+
+.drugikvadar {       
+    height: 300px;
+    width: 200px;
+    color:white;
+    font-size: 3rem;
+    font-family: serif;
+    background-color: #c90000;
+    border-radius:7px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* vidi da li ces zadnje 4 linije zadrzati */
+    padding: 20px;
+    z-index: 40;
+    position: absolute;
+    right: 8.3rem;
+    bottom: 2rem;
+    box-shadow: 10px 10px 5px #900000b0;
+}
+/* gotov desktop usluge na homepageu */
+
+.vizije {
+    height: 90vh;
+    background-image: url(slike/Background\ 1.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin: 1rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vizije-mobile-slika {
+    display: none;
+}
+
+.vizije-naslov {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    
+}
+
+.nasevizijeP {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+    width: 500px;
+}
+
+/* kraj za nase vizije desktop na homepageu */
+
+.nasrad-i-proizvodi {
+    display: flex;
+}
+
+.nv-nasrad, .nv-proizvodi {
+    height: 31.25rem;
+    width: 50%;
+    background-color: #f9f9f9;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding-top: 3rem;
+}
+
+.nv-proizvodi {
+    background-image: url(slike/blank-roll-up-passport-stand-p130-320_image-removebg-preview\ 2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 0;
+}
+
+.nasrad-podnaslov {
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+.hyperlink-podnaslov-nv a {
+    color: #c90000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* slike */
+.slika-olovka-nasrad-homepage {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+
+
+/* kraj za nas rad i proizvode na homepage desktop */
+
+.klijenti {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 1rem;
+}
+
+.klijenti-naslov {
+    margin-bottom: 2rem;
+}
+
+.klijenti-p { 
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+    width: 500px;
+}
+
+.klijent-logo {
+    width: 150px;
+    margin: 1rem;
+}
+
+.logotipi-sponzora-klijenti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 7rem 0 7rem;
+}
+/* kraj sponzor sekcije na homepageu desktop view */
+
+/* footer krece */
+
+footer {
+    background-color: #c90000;
+    color: white;
+    height: 81vh;
+}
+
+.gornji-dio-footera {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.eldzam-desc-footer, .footer-nav, .footer-kontakt {
+    width: 19rem;
+}
+
+
+.footer-nav ul li a {
+    font-size: 1.5rem;
+    line-height: 5rem;
+    text-decoration: underline;
+    color: white;
+}
+.footer-nav ul li {
+    list-style: none;
+}
+
+.footer-naslov {
+    font-size: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+
+}
+
+.footer-p {
+    text-align: center;
+    
+}
+
+
+.donji-dio-footera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons {
+    margin: 3rem auto;
+}
+
+i {
+    margin: .3rem ;
+}
+
+.icons a {
+    color: white;
+}
+
+.trademark-moj {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.trademark-moj a {
+    color: white;
+    text-decoration: underline;
+    padding-bottom: 2rem;
+
+}
+
+/* kraj footera za desktop */
+
+
+@media only screen and (max-width: 1400px){
+    .drugi .drugikvadar {
+        right: 2rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 1200px){
+
+    * {
+        overflow-x: hidden;
+    }
+
+
+
+    .prvi ul{
+        font-size: 1.2rem;
+    }
+
+    .prvi ul li {
+        margin-bottom: .5rem;
+    }
+
+    .vizije {
+        background-image: url(slike/Background\ 1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .logotipi-sponzora-klijenti {
+        width: 95%;
+    }
+    .logotip-sponzora-klijenti img {
+        width: 7rem;
+        object-fit: contain;
+    }
+
+    
+    footer{
+        padding: 3rem;
+        height: unset;
+    }
+
+}
+
+@media only screen and (max-width: 1050px){
+
+    .usluge-container {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .prvi {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        line-height: 3rem;
+        padding-left: 1rem;
+        padding-top: 4rem;
+    }
+
+    .prvi h1 {
+        text-align: center;
+    }
+
+    .prvi p {
+        text-align: center;
+    }
+
+    .drugi {
+        height: unset;
+        width: 100%;
+        margin-top: -12rem;
+        margin-bottom: 4rem;
+    }
+
+    .drugi {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        padding: 0;
+    }
+
+    .drugikvadar {
+        position: relative;
+        left: 10rem;
+        height: 22rem;
+        width: 12.5rem;
+        font-size: 2rem;
+    }
+
+    .vizije {
+        height: 90vh;
+        background-image: url(slike/Background\ 1.jpg);
+        background-size: cover;
+        margin: 1rem 1rem 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 1400px){ 
+    footer {
+        padding: 3rem;
+    }
+}
+
+
+@media only screen and (max-width: 780px){
+
+    header {
+        z-index: 9999;
+        
+    }
+
+    .nav-content .nav-logo-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+
+    .nav-logo-content img, .nav-logo-content h2 {
+        display: inline-block; 
+    }
+
+    .nav-logo-content-list img, .nav-logo-content-list h2 {
+        display: none;
+    }
+
+    .nav-content {
+        padding: 0 1rem;
+
+    }
+    .show {
+        background-color: #c90000;
+    }
+    .nav-links {
+        position: fixed;
+        top: 44px;
+        right: 0;
+        height: 0;
+        width: 100%;
+        background: #c90000;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: height 2s cubic-bezier(0.19, 1, 0.22, 1);
+        background-color: 0.3s;
+    }
+
+    /* .nav-links .responsive-prvi-link-navbar {
+        display: block;
+    }                                                                   ovo je link za home na responsive navbaru. pitaj dzidu da li zeli da ga ima ili nema jer vec postoji logo*/
+
+    .show .nav-links {
+        height: 100%;
+        background-color: #c90000;
+    }
+    .nav-links a {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        margin: 1rem 3.125rem;
+        transition: opacity 1.5s, height 2s;
+    }
+    .show .nav-links a {
+        opacity: 1;
+        width: auto;
+        height: auto;
+    }
+    .nav-icon {
+        order: 1;
+        display: grid;
+        height: unset;
+    }
+
+/* navbar responsive */
+
+
+    .usluge-container {
+        justify-content: center;
+        align-items: center;
+    }
+    .prvi {
+        width: 100%;
+        align-items: center;
+        height: unset;
+        padding: 1rem 1rem .2rem 1rem;
+    }
+
+    .prvi h1 {
+        padding: 0 1rem;
+        font-size: 2rem;
+        width: 21.875rem;
+        text-align: center;
+        height: 5.5rem;
+    }
+
+    .prvi p{
+        font-family: 'Inter Tight', sans-serif;
+        text-align: center;
+        line-height: 1.6rem;
+        height: 5rem;
+        margin: 2rem auto;
+        width: 21rem;
+        color: #c90000;
+
+    }
+
+    .prvi ul {
+        width: 21rem;
+        font-size: 1rem;
+        line-height: 2rem;
+        font-family: 'Inter Tight', sans-serif;
+        color: #900000;
+    }
+    
+    .prvi ul .usluge_listItem {
+        display: list-item;
+        list-style: circle;
+    }
+
+    .drugi {
+        display: none;
+    }
+
+
+    
+    .vizije {
+        background-image: none;
+        margin: 1rem;
+    }
+    .vizije-mobile-slika {
+        display: block;
+        width: 45%;
+        object-fit: fill;
+        margin-top: 2rem;
+    }
+
+    .vizije-naslov {
+        font-size: 3rem;
+    }
+
+    .nasevizijeP {
+        padding: 2rem;
+        width: 100%;
+    }
+
+    
+    .nasrad-i-proizvodi {
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    .nv-nasrad, .nv-proizvodi {
+        width: unset;
+        margin: 1rem;
+        background-repeat: no-repeat;
+        height: 60vh;
+    }
+
+
+    .klijenti {
+        height: unset;
+    }
+
+    .logotipi-sponzora-klijenti {
+        flex-direction: column;
+    }
+
+
+
+    .klijenti-naslov {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    
+    .klijenti-p { 
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        text-align: center;
+        width: 300px;
+    }
+
+    .logotip-sponzora-klijenti img {
+        width: 10rem;
+    }
+
+    footer {
+        height: unset;
+    }
+
+    .gornji-dio-footera {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .footer-nav, .eldzam-desc-footer, .footer-kontakt {
+        margin-bottom: 3rem;
+    }
+
+
+
+
+}

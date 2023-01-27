@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'monsterrat', sans-serif;
+
+}
+
+body {
+    background-color: #fefefe;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+
+}
+
+
+.nav-content {
+    margin: 0 auto;
+    padding: 0 8.2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #c90000;
+}
+
+.nav-content img {
+    width: 2rem;
+    margin-right: .3rem;
+}
+
+.nav-content h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 44px;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #ffffff;
+}
+
+.nav-logo-content img, .nav-logo-content h2 {
+    display: none; 
+}
+
+.nav-links .nav-logo-content-list {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* .nav-links a {
+    border-bottom: solid 2px white;
+} vidi da li zelis ovo */
+
+.nav-content a {
+    display: block;
+    font-size: 1rem;
+    line-height: 44px;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #ffffff;
+}
+.nav-content a:hover,
+.nav-icon:hover,
+.search-icon:hover {
+    opacity: 0.7;
+}
+.nav-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-links .responsive-prvi-link-navbar {
+    display: none;
+}
+
+.nav-icon {
+    display: none;
+    grid-gap: 5px;
+    grid-template-columns: auto;
+    padding: 17px 0;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.bar {
+    height: 1px;
+    width: 18px;
+    background: white;
+    transition: 0.5s;
+}
+.show .one {
+    transform: rotate(45deg) translateY(4px);
+}
+.show .two {
+    transform: rotate(-45deg) translateY(-4px);
+}
+
+.show .three {
+    transform: translateX(500px);
+}
+
+
+
+
+
+
+
+
+.hero-usluge {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background: url(slike/image\ 2.jpg);
+    background-size: cover;
+    color: #c90000;
+}
+
+.hero-naslov {
+    width: 100%;
+    background-color: #5858580e;
+    padding: .2rem 0;
+}
+
+
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+img{
+	max-width: 100%;
+	vertical-align: middle;
+}
+/*.gallery*/
+.gallery{
+    margin: 1rem auto;
+	width: 100%;
+	display: block;
+	min-height: 100vh;
+	background-color: #f9f9f9;
+	padding: 100px 0;
+}
+.gallery .gallery-filter{
+	padding: 0 15px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.gallery .gallery-filter .filter-item{
+	color: #c90000;
+	font-size: 17px;
+  border: 2px solid #c90000;
+	text-transform: uppercase;
+	display: inline-block;
+  border-radius: 20px;
+  margin-right: 8px;
+	cursor: pointer;
+  padding: 8px 20px 8px 20px;
+	line-height: 1.2;
+	transition: all 0.3s ease;
+}
+.gallery .gallery-filter .filter-item.active{
+	color: white;
+	border-color : #c90000;
+  background: #c90000;
+}
+.gallery .gallery-item{
+	width: calc(100% / 3);
+	padding: 15px;
+
+}
+.gallery .gallery-item-inner img{
+	width: 100%;
+  border: 3px solid #c90000;
+}
+.gallery .gallery-item.show{
+	animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.gallery .gallery-item.hide{
+	display: none;
+}
+
+
+
+
+footer {
+    background-color: #c90000;
+    color: white;
+    height: 81vh;
+}
+
+.gornji-dio-footera {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.eldzam-desc-footer, .footer-nav, .footer-kontakt {
+    width: 19rem;
+}
+
+
+.footer-nav ul li a {
+    font-size: 1.5rem;
+    line-height: 5rem;
+    text-decoration: underline;
+    color: white;
+}
+.footer-nav ul li {
+    list-style: none;
+}
+
+.footer-naslov {
+    font-size: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+
+}
+
+.footer-p {
+    text-align: center;
+    
+}
+
+
+.donji-dio-footera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons {
+    margin: 3rem auto;
+}
+
+i {
+    margin: .3rem ;
+}
+
+.icons a {
+    color: white;
+}
+
+.trademark-moj {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.trademark-moj a {
+    color: white;
+    text-decoration: underline;
+    padding-bottom: 2rem;
+
+}
+
+/*responsive*/
+
+@media only screen and (max-width:1200px) {
+    footer{
+        padding: 3rem;
+        height: unset;
+    }
+    span {
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 780px) {
+    header {
+        z-index: 9999;
+        
+    }
+
+    .nav-content .nav-logo-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+
+    .nav-logo-content img, .nav-logo-content h2 {
+        display: inline-block; 
+    }
+
+    .nav-logo-content-list img, .nav-logo-content-list h2 {
+        display: none;
+    }
+
+    .nav-content {
+        padding: 0 1rem;
+
+    }
+    .show {
+        background-color: #fff;
+    }
+    .nav-links {
+        position: fixed;
+        top: 44px;
+        right: 0;
+        height: 0;
+        width: 100%;
+        background: #c90000;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: height 2s cubic-bezier(0.19, 1, 0.22, 1);
+        background-color: 0.3s;
+    }
+
+    /* .nav-links .responsive-prvi-link-navbar {
+        display: block;
+    }                                                                   ovo je link za home na responsive navbaru. pitaj dzidu da li zeli da ga ima ili nema jer vec postoji logo*/
+
+    .show .nav-links {
+        height: 100%;
+        background-color: #c90000;
+    }
+    .nav-links a {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        margin: 1rem 3.125rem;
+        transition: opacity 1.5s, height 2s;
+    }
+    .show .nav-links a {
+        opacity: 1;
+        width: auto;
+        height: auto;
+    }
+    .nav-icon {
+        order: 1;
+        display: grid;
+        height: unset;
+    }
+/* navbar responsive */
+    
+}
+
+@media only screen and (max-width: 500px){
+	.gallery .gallery-item{
+		width: 50%;
+	}
+
+    .hero-usluge {
+        height: 60vh;
+    }
+
+    .hero-naslov {
+        padding: 0 1rem;
+        font-size: .9rem;
+    }
+
+    span {
+        margin-bottom: 1rem;
+    }
+}
+@media only screen and (max-width: 467px){
+    .gallery .gallery-item{
+		width: 100%;
+	}
+	.gallery .gallery-filter .filter-item{
+		margin-bottom: 10px;
+	}
+    span {
+        margin-bottom: 1rem;
+    }
+}
+@media only screen and (max-width:780px) {
+    footer {
+        height: unset;
+    }
+
+    .gornji-dio-footera {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .footer-nav, .eldzam-desc-footer, .footer-kontakt {
+        margin-bottom: 3rem;
+    }
+    span {
+        margin-bottom: 1rem;
+    }
+
+}
